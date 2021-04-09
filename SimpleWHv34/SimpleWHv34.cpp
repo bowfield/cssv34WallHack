@@ -24,7 +24,7 @@ int main()
 			}
 			else
 			{
-				int memoryWriteStatus = WriteProcessMemory(process, (LPVOID)0x243B0C9C, &v, (DWORD)sizeof(v), NULL);
+				int memoryWriteStatus = WriteProcessMemory(process, (LPVOID)0x243B0C9C, &v, (DWORD)sizeof(v), NULL); //r_drawothermodels
 				if (memoryWriteStatus > 0)
 				{
 					cout << "Wall hack succefuly installed!\n";
@@ -33,7 +33,7 @@ int main()
 				{
 					cout << "Unnamed Error!\n";
 				}
-				int memoryWriteStatus0 = WriteProcessMemory(process, (LPVOID)0x243EF114, &fog_enable, (DWORD)sizeof(fog_enable), NULL);
+				int memoryWriteStatus0 = WriteProcessMemory(process, (LPVOID)0x243EF114, &fog_enable, (DWORD)sizeof(fog_enable), NULL); //fog_enable
 				if (memoryWriteStatus0 > 0)
 				{
 					cout << "Smokes has been disabled!\n";
@@ -42,7 +42,7 @@ int main()
 				{
 					cout << "Unnamed Error!\n";
 				}
-				int memoryWriteStatus1 = WriteProcessMemory(process, (LPVOID)0x243EEE44, &anull, (DWORD)sizeof(anull), NULL);
+				int memoryWriteStatus1 = WriteProcessMemory(process, (LPVOID)0x243EEE44, &anull, (DWORD)sizeof(anull), NULL); //r_viewmodel 
 			}
 			cin >> novar;
 
