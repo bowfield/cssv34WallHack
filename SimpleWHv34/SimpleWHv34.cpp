@@ -1,14 +1,16 @@
-﻿#include "stdafx.h"
+#include "stdafx.h"
+
 using namespace std;
-int main()
-{
+
+int main() {
 	int anull = 0;
 	int fog_enable = 0;
 	int novar = 0;
 	int v = 2;
 	int d = 1;
+	
 	HWND window = FindWindowA(0, "Counter-Strike Source");
-	if (window == 0)
+	if (window > 0)
 	{
 		cout << "The game is not running !\n";
 	}
